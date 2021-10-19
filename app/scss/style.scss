@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* 
+        Samet TÜRKMEN
+*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: "Open Sans", sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    background-color: #f7f9fd;
+    padding: 30px;
+}
+.divider {
+    height: 40px;
+}
+
+.component {
+    &--feedback {
+        background: #f7f9fd;
+        padding: 30px 25px;
+        box-shadow: 0 24px 27px -15px rgba($color: #3457dc, $alpha: 0.13);
+        position: relative;
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        h6 {
+            max-width: 284px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            color: #202842;
+            padding-bottom: 25px;
+            margin: 0 auto;
+        }
+        &.style1 {
+            width: 380px;
+
+            ul {
+                padding: -5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 90px;
+                    height: 90px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    transition: 300ms box-shadow;
+                    &:hover {
+                        box-shadow: 0px 5px 15px -5px rgba(148, 165, 228, 0.7);
+                    }
+                }
+            }
+        }
+        &.style2 {
+            width: 526px;
+            .label-numbers {
+                display: flex;
+                margin: -4px;
+                li {
+                    input {
+                        display: none;
+                    }
+
+                    width: 36px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #202842;
+                    border: 1px solid #dcdff1;
+                    border-radius: 5px;
+                    margin: 4px;
+                    transition: 300ms all;
+                    &:hover {
+                        background-color: #3457dc;
+                        color: #fff;
+                    }
+                }
+            }
+            .info {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                label {
+                    font-size: 12px;
+                    color: #5d698d;
+                    margin-bottom: 26px;
+                }
+            }
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                font-size: 14px;
+                color: #5d698d;
+                display: inline-block;
+                &::after {
+                    content: "";
+                    width: 0px;
+                    height: 1px;
+                    display: block;
+                    background: #5d698d;
+                    transition: 400ms;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+            button {
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #3457dc;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
